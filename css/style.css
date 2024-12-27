@@ -1,3 +1,20 @@
+body {
+    background-color: red;
+}
 h1 {
-    color: aquamarine;
+    border: solid;
+    background-color: brown;
+}
+div {
+    border: solid;
+    background-color: brown;
+    margin: 5px;
+}
+button {
+    border: solid;
+    background-color:#ef4646  ;
+    border-radius: 20px;
+}
+#bank {
+    flex: auto;
 }
