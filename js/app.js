@@ -1,25 +1,24 @@
 
 const button1 = document.querySelector("#answer1");
-button1.addEventListener("click", () => {
-  console.log("answer 1 is pressed!");
-});
-
+button1.addEventListener("click", clickFunction);
 const button2 = document.querySelector("#answer2");
-button2.addEventListener("click", () => {
-  console.log("answer 2 is pressed!");
-});
-
+button2.addEventListener("click", clickFunction);
 const button3 = document.querySelector("#answer3");
-button3.addEventListener("click", () => {
-  console.log("answer 3 is pressed!");
-});
-
+button3.addEventListener("click", clickFunction);
 const button4 = document.querySelector("#answer4");
-button4.addEventListener("click", () => {
-  console.log("answer 4 is pressed!");
-});
+button4.addEventListener("click", clickFunction);
+const buttonQuit = document.querySelector("#quit");
+buttonQuit.addEventListener("click", clickFunction);
 
-const quitButton = document.querySelector("#quitButton");
-quitButton.addEventListener("click", () => {
-    console.log("quit is pressed!");
-  });
+function clickFunction(event) {
+  const button = event.target;
+  //console.log(button.textContent);
+  button.classList.add("choose");
+  setTimeout(function() {
+      //your code to be executed after 1 second
+      button.classList.remove("choose");
+    }, 100);
+
+  console.log(`${button.textContent} is pressed`);
+
+}
