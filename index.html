@@ -9,20 +9,49 @@
 
 </head>
 <body>
+    <!-- make different divs for start page and game page, use show and hide -->
     <div id="body">
         <div id="topNav">
-            <h2 id="bank">Bank: </h2>
-            <button id="quit">Quit</button>
+            <button id="soundButton">Sound: On</button>
         </div>
-        <div id="display">
-            <div id="questionDisplay">Question is displayed here</div>
+        <div id="homePage">
+            <div id="homeDisplay">
+                <div id="logo">logo</div>
+            </div>
+            <div id="homeButtons">
+                <button id="instructionsButton">Instructions</button>
+                <button id="startGame">Start game</button>
+            </div>
         </div>
-        <div id="buttons">
-            <button id="answer1">Answer 1</button>
-            <button id="answer2">Answer 2</button>
-            <button id="answer3">Answer 3</button>
-            <button id="answer4">Answer 4</button>
+
+        <div id="gamePage">
+            <div id="gameTopNav">
+                <h2 id="bank">Bank: </h2>
+                <button id="quit">Quit</button>
+            </div>
+            <div id="gameDisplay">
+                <div id="gameQuestionDisplay">Question is displayed here</div>
+            </div>
+            <div id="gameButtons">
+                <button id="answer1">Answer 1</button>
+                <button id="answer2">Answer 2</button>
+                <button id="answer3">Answer 3</button>
+                <button id="answer4">Answer 4</button>
+            </div>
         </div>
+
+        <div id="instructionsPage">
+            <div id="instructionsDisplay">
+                <div id="instructionsFull">full instructions</div>
+            </div>
+            <div id="backButton">
+                <button id="backToHome">Back</button>
+            </div>
+        </div>
+        <div id="winningPage"></div>
+        <div id="losingPage"></div>
+
+        
 
     </div>
 </body>
