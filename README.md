@@ -22,6 +22,12 @@ this is a very simple game to play. there will be a total of 10 questions to ans
   <ul>
     <li>As a quiz player, I want to see a fresh game page so that I can start playing.</li>
     <li>As a player, i want to be able to choose if i want to start straightaway, or see the instructions first</li>
+    * As a player, i want to be abld to toggle the music on and off
+    * As a player, i want to see which button i pressed
+    * As a player, i want to know if the button i pressed is the correct answer or not
+    * As a player, i want  to be able to see the amount in my bank througout the game
+    * As a player, i want to be able to quit the game halfway if i dont want to play anymore
+    
 
   </ul>
 </p>
