@@ -64,9 +64,15 @@ body {
  #quit {
     margin: 5px;
     border-radius: 20px;
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
  }
+ #continue {
+   margin: 5px;
+   border-radius: 20px;
+   height: 100px;
+   width: 100px;
+}
 
  #gameDisplay {
     display: flex;
@@ -77,10 +83,12 @@ body {
     background-color: #ed6f84;
  }
  #gameQuestionDisplay {
+   display: flex;
+   flex-direction: column;
     width: 85%;
     height: 85%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     border: solid;
  }
@@ -120,6 +128,98 @@ body {
     background-color: #ed6f84;
     border: solid;
  }
+ #loadingPage {
+   height:800px;
+   display: flex;
+   border: solid;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #ed6f84;
+ }
+ #choosingCategoryPage {
+   height:800px;
+   display: flex;
+   border: solid;
+   justify-content: space-evenly;
+   align-items: center;
+   background-color: #ed6f84;
+ }
+ #choosingCategoryPage button {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   height: 100px;
+   width: 100px;
+   border: solid;
+ }
+ #next{
+   display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ #nextButton {
+   display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    border: solid;
+    margin: 20px;
+ }
+ #correctAnsPage {
+   height:800px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+ }
+ #correctDisplay{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 500px;
+   border: solid;
+   background-color: #ed6f84;
+ }
+ #correctButtons{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   height: 180px;
+   background-color: #ed6f84;
+   border: solid;
+ }
+
+#losingPage{
+   height:800px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+#losingDisplay {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 500px;
+   border: solid;
+   background-color: #ed6f84;
+}
+#losingPageButtons {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   height: 180px;
+   background-color: #ed6f84;
+   border: solid;
+}
+
  .choose {
-    background-color: Green;
+    background-color: rgb(100, 102, 100);
+  }
+  .correct {
+   background-color: Green;
+  }
+  .wrong {
+   background-color: red;
   }
