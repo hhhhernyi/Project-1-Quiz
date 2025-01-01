@@ -6,7 +6,7 @@ const games = {
       bank: "$0",
       cat1: {
         name: "Politics",
-        question: "Who is Singapore's longest serving Prime minister",
+        question: "Who is Singapore's longest serving Prime minister?",
         correctAns: "Lee Kuan Yew",
         wrongAns1: "Goh Chok Tong",
         wrongAns2: "Lee Hsien Loong",
@@ -38,310 +38,310 @@ const games = {
       },
     }),
     (q2 = {
-      bank: "$10000",
+      bank: "$1000",
       cat1: {
-        name: "cat2.1",
-        question: "question2.1",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Facts",
+        question: "What color is the Singapore Citizen IC?",
+        correctAns: "Pink",
+        wrongAns1: "Blue",
+        wrongAns2: "Yellow",
+        wrongAns3: "Green",
       },
       cat2: {
-        name: "cat2.2",
-        question: "question2.2",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Landmarks",
+        question: "What is the name of Singapore's main airport?",
+        correctAns: "Changi Airport",
+        wrongAns1: "Seletar Airport",
+        wrongAns2: "Tengah Airport",
+        wrongAns3: "Tuas Airport",
       },
       cat3: {
-        name: "cat2.3",
-        question: "question2.3",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Geography",
+        question: "What is The Capital City of Singapore?",
+        correctAns: "Singapore",
+        wrongAns1: "Orchard",
+        wrongAns2: "Raffles Place",
+        wrongAns3: "Sentosa",
       },
       cat4: {
-        name: "cat2.4",
-        question: "question2.4",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Icons",
+        question: "What is Singapore's icon that has a lion head and a mermaid body called?",
+        correctAns: "Merlion",
+        wrongAns1: "Lion fish",
+        wrongAns2: "Singamaid",
+        wrongAns3: "Mersinga",
       },
     }),
     (q3 = {
-      bank: "$25000",
+      bank: "$2500",
       cat1: {
-        name: "cat3.1",
-        question: "question3.1",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "History",
+        question: "Who was The British Administrator who Established Singapore as a British Colony in 1819?",
+        correctAns: "Sir Stamford Raffles.",
+        wrongAns1: "Sir William Farquhar",
+        wrongAns2: "Robert Fullerton",
+        wrongAns3: "Ronald Macpherson",
       },
       cat2: {
-        name: "cat3.2",
-        question: "question3.2",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Symbols",
+        question: "What does the red colour on our national flag represent?",
+        correctAns: "Universal Brotherhood and Equality of Man",
+        wrongAns1: "Progress and Prosperity",
+        wrongAns2: "Everlasting Peace and Justice for Man",
+        wrongAns3: "Young Nation on the rise",
       },
       cat3: {
-        name: "cat3.3",
-        question: "question3.3",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Abbreviation",
+        question: "What does MRT stand for?",
+        correctAns: "Mass Rapid Transit",
+        wrongAns1: "Mass Rapid Travel",
+        wrongAns2: "Mass Rapid Transport",
+        wrongAns3: "Mass Rail Transport",
       },
       cat4: {
-        name: "cat3.4",
-        question: "question3.4",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Food",
+        question: "What Fruit in Singapore is known as the King Of Fruits",
+        correctAns: "Durian",
+        wrongAns1: "Jackfruit",
+        wrongAns2: "Mangosteen",
+        wrongAns3: "Apple",
       },
     }),
     (q4 = {
-      bank: "$50000",
+      bank: "$5000",
       cat1: {
-        name: "cat4.1",
-        question: "question4.1",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Language",
+        question: "What is the official national language of Singapore?",
+        correctAns: "Malay",
+        wrongAns1: "Mandarin",
+        wrongAns2: "English",
+        wrongAns3: "Singlish",
       },
       cat2: {
-        name: "cat4.2",
-        question: "question4.2",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "History",
+        question: "In which year did Singapore fall to the Japanese in World War Two?",
+        correctAns: "1942",
+        wrongAns1: "1943",
+        wrongAns2: "1945",
+        wrongAns3: "1947",
       },
       cat3: {
-        name: "cat4.3",
-        question: "question4.3",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Sports",
+        question: "Who is Singapore's first Olympian?",
+        correctAns: "LLoyd Valberg (High Jump)",
+        wrongAns1: "Tan Howe Liang (Weightlifting)",
+        wrongAns2: "Feng Tianwei (Ping Pong)",
+        wrongAns3: "Joseph Schooling (Swimming)",
       },
       cat4: {
-        name: "cat4.4",
-        question: "question4.4",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Food",
+        question: "What is the national drink of Singapore",
+        correctAns: "The Singapore Sling",
+        wrongAns1: "Tiger Beer",
+        wrongAns2: "Pokka Green Tea",
+        wrongAns3: "Kopi Peng",
       },
     }),
     (q5 = {
-      bank: "$100000",
+      bank: "$10000",
       cat1: {
-        name: "cat5.1",
-        question: "question5.1",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Movies",
+        question: "Which hawker centre was featured in the movie Crazy Rich Asians?",
+        correctAns: "Newton Food Centre",
+        wrongAns1: "Chomp Chomp",
+        wrongAns2: "East Coast Lagoon",
+        wrongAns3: "Maxwell Food Centre",
       },
       cat2: {
-        name: "cat5.2",
-        question: "question5.2",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "NDP",
+        question: "What is the theme of Singapore NDP in 2023?",
+        correctAns: "Onward As One",
+        wrongAns1: "We Are Singapore",
+        wrongAns2: "Together, Our Singapore Spirit",
+        wrongAns3: "A Stronger Singapore",
       },
       cat3: {
-        name: "cat5.3",
-        question: "question5.3",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Nature",
+        question: "What is the name of Singapore's national flower?",
+        correctAns: "Vanda Miss Joaquim",
+        wrongAns1: "Rafflesia",
+        wrongAns2: "Hibiscus",
+        wrongAns3: "Malayan Ixora",
       },
       cat4: {
-        name: "cat5.4",
-        question: "question5.4",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Transport",
+        question: "Which MRT Station has the longest escalator?",
+        correctAns: "Bras Basah",
+        wrongAns1: "Stadium",
+        wrongAns2: "Raffles Place",
+        wrongAns3: "Redhill",
       },
     }),
     (q6 = {
-      bank: "$200000",
+      bank: "$25000",
       cat1: {
-        name: "cat6.1",
-        question: "question6.1",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Locations",
+        question: "Which of these streets in Singapore do not exist?",
+        correctAns: "Punggol Street",
+        wrongAns1: "Mandalay Street",
+        wrongAns2: "China Street",
+        wrongAns3: "Club Street",
       },
       cat2: {
-        name: "cat6.2",
-        question: "question6.2",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Awards",
+        question: "How many times has Singapore's Changi Airport been awarded the title of Skytrax's Best Airport in the World?",
+        correctAns: "10",
+        wrongAns1: "5",
+        wrongAns2: "8",
+        wrongAns3: "7",
       },
       cat3: {
-        name: "cat6.3",
-        question: "question6.3",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Food",
+        question: "Which is the oldest hawker centre in Singapore?",
+        correctAns: "Lau Pa Sat",
+        wrongAns1: "People's Park Food Centre",
+        wrongAns2: "Maxwell Food Centre",
+        wrongAns3: "Tekka Market",
       },
       cat4: {
-        name: "cat6.4",
-        question: "question6.4",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Date",
+        question: "In which year was the Istana built?",
+        correctAns: "1869",
+        wrongAns1: "1879",
+        wrongAns2: "1868",
+        wrongAns3: "1872",
       },
     }),
     (q7 = {
-      bank: "$500000",
+      bank: "$50000",
       cat1: {
-        name: "cat7.1",
-        question: "question7.1",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Arts",
+        question: "Which is the oldest Museum in Singapore?",
+        correctAns: "The National Museum of Singapore",
+        wrongAns1: "ArtScience Museum",
+        wrongAns2: "Singapore Art Museum",
+        wrongAns3: "National Gallery Singapore",
       },
       cat2: {
-        name: "cat7.2",
-        question: "question7.2",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Politics",
+        question: "Who was the first elected president of Singapore?",
+        correctAns: "Ong Teng Cheong",
+        wrongAns1: "Yusof Ishak",
+        wrongAns2: "Wee Kim Wee",
+        wrongAns3: "Benjamin Sheares",
       },
       cat3: {
-        name: "cat7.3",
-        question: "question7.3",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Symbols",
+        question: "The five stars on Singapore's flag represent?",
+        correctAns: "Democracy, Peace, Progress, Justice, Equality",
+        wrongAns1: "Democracy, Peace, Progress, Meritocracy, Equality",
+        wrongAns2: "Democracy, Harmony, Progress, Justice, Equality",
+        wrongAns3: "Democracy, Peace, Progress, Justice, Respect",
       },
       cat4: {
-        name: "cat7.4",
-        question: "question7.4",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Culture",
+        question: "How many UNESCO world heritage sites are there in Singapore?",
+        correctAns: "1",
+        wrongAns1: "5",
+        wrongAns2: "8",
+        wrongAns3: "3",
       },
     }),
     (q8 = {
-      bank: "$750000",
+      bank: "$100000",
       cat1: {
-        name: "cat8.1",
-        question: "question8.1",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Population",
+        question: "Which town in Singapore has the largest population in 2024?",
+        correctAns: "Bedok",
+        wrongAns1: "Sengkang",
+        wrongAns2: "Jurong West",
+        wrongAns3: "Tampines",
       },
       cat2: {
-        name: "cat8.2",
-        question: "question8.2",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Landmarks",
+        question: "Which is the oldest bridge in Singapore?",
+        correctAns: "Cavenagh Bridge",
+        wrongAns1: "Benjamin Sheares Bridge",
+        wrongAns2: "Jiak Kim Bridge",
+        wrongAns3: "Anderson Bridge",
       },
       cat3: {
-        name: "cat8.3",
-        question: "question8.3",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Buildings",
+        question: "What is the maximum height of skyscrapers allowed in Singapore?",
+        correctAns: "280m",
+        wrongAns1: "330m",
+        wrongAns2: "420m",
+        wrongAns3: "300m",
       },
       cat4: {
-        name: "cat8.4",
-        question: "question8.4",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Sports",
+        question: "In 2016 swimmer Joseph Schooling won Singapore's first Olympic Gold medal in which event?",
+        correctAns: "100m Butterfly",
+        wrongAns1: "200m Freestyle",
+        wrongAns2: "200m Butterfly",
+        wrongAns3: "50m Freestyle",
       },
     }),
     (q9 = {
-      bank: "$900000",
+      bank: "$250000",
       cat1: {
-        name: "cat9.1",
-        question: "question9.1",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Buildings",
+        question: "Which is the highest building in Singapore?",
+        correctAns: "Tanjong Pagar Centre",
+        wrongAns1: "One Raffles Place",
+        wrongAns2: "Marina Bay Sands",
+        wrongAns3: "100AM Mall",
       },
       cat2: {
-        name: "cat9.2",
-        question: "question9.2",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Locations",
+        question: "On which road can you find the National Gallery Singapore?",
+        correctAns: "St. Andrews Road",
+        wrongAns1: "Parliament Road",
+        wrongAns2: "Stamford Road",
+        wrongAns3: "Bayfront Avenue",
       },
       cat3: {
-        name: "cat9.3",
-        question: "question9.3",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Bus",
+        question: "Which public bus service has the longest route?",
+        correctAns: "Bus No. 858",
+        wrongAns1: "Bus No. 961",
+        wrongAns2: "Bus No. 171",
+        wrongAns3: "Bus No. 31",
       },
       cat4: {
-        name: "cat9.4",
-        question: "question9.4",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "School",
+        question: "Which of these schools is the oldest girls' school in Singapore?",
+        correctAns: "St. Margaret's School",
+        wrongAns1: "Nanyang Girls School",
+        wrongAns2: "Raffles Girls School",
+        wrongAns3: "Singapore Chinese Girls School",
       },
     }),
     (q10 = {
-      bank: "$1000000",
+      bank: "$500000",
       cat1: {
-        name: "cat10.1",
-        question: "question10.1",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Sports",
+        question: "What is The Name of The Singaporean Football Club that Has Won The Most Singapore Premier League Titles?",
+        correctAns: "Albirex Niigata Singapore",
+        wrongAns1: "Lion City Sailors",
+        wrongAns2: "Tampines Rovers FC",
+        wrongAns3: "Geylang United",
       },
       cat2: {
-        name: "cat4.2",
-        question: "question10.2",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Transport",
+        question: "Which MRT line is the longest in singapore?",
+        correctAns: "East-West Line (Green)",
+        wrongAns1: "Downtown Line (Blue)",
+        wrongAns2: "Thomson-East Coast Line (Brown)",
+        wrongAns3: "Circle Line (Yellow)",
       },
       cat3: {
-        name: "cat4.3",
-        question: "question10.3",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Politics",
+        question: "How many constituencies does Singapore have?",
+        correctAns: "29",
+        wrongAns1: "32",
+        wrongAns2: "25",
+        wrongAns3: "39",
       },
       cat4: {
         name: "cat10.4",
@@ -428,20 +428,18 @@ function wrongAns(event) {
     button.classList.remove("wrong");
     losingPage.style.display = "flex";
     gamePage.style.display = "none";
+    questionNumber = 0;
     const losingDisplayEl = document.querySelector("#losingDisplay");
     losingDisplayEl.textContent =`Oh no, you have reached the end of the game, better luck next time! You have gotten $0!`;
-  }, 2000);
+  }, 2800);
 }
 function quit(event) {
   const button = event.target;
-  //console.log(button.textContent);
   button.classList.add("choose");
   setTimeout(function () {
-    //your code to be executed after 1 second
     button.classList.remove("choose");
   }, 100);
   setTimeout(function () {
-    //your code to be executed after 1 second
     losingPage.style.display = "flex";
     correctAnsPage.style.display = "none";
     const losingDisplay = document.querySelector("#losingDisplay");
@@ -449,8 +447,12 @@ function quit(event) {
   }, 1000);
 }
 function continueBtn(event) {
+  const button = event.target;
+  button.classList.add("choose");
   setTimeout(function () {
-    //your code to be executed after 1 second
+    button.classList.remove("choose");
+  }, 100);
+  setTimeout(function () {
     choosingCategoryPage.style.display = "flex";
     correctAnsPage.style.display = "none";
     cat1ButtonEl.textContent = games.question[questionNumber].cat1.name;
@@ -510,25 +512,33 @@ const cat4ButtonEl = document.querySelector("#cat4");
 // once we selected the category, we can proceed to the question
 // once we press instructions, we want to go to the instructions page
 // pressing the back button on instructions page brings us back to home page
-function startGame() {
-  if (
-    gamePage.style.display === "none" &&
-    loadingPage.style.display === "none"
-  ) {
-    loadingPageAnimation();
-    loadingPage.style.display = "flex";
-    homePage.style.display = "none";
-
-    setTimeout(function () {
-      //your code to be executed after 1 second
-      choosingCategoryPage.style.display = "flex";
-      loadingPage.style.display = "none";
-      cat1ButtonEl.textContent = games.question[questionNumber].cat1.name;
-      cat2ButtonEl.textContent = games.question[questionNumber].cat2.name;
-      cat3ButtonEl.textContent = games.question[questionNumber].cat3.name;
-      cat4ButtonEl.textContent = games.question[questionNumber].cat4.name;
-    }, 2500);
-  }
+function startGame(event) {
+  const button = event.target;
+  button.classList.add("choose");
+  setTimeout(function () {
+    button.classList.remove("choose");
+  }, 100);
+  setTimeout(function () {
+    if (
+      gamePage.style.display === "none" &&
+      loadingPage.style.display === "none"
+    ) {
+      loadingPageAnimation();
+      loadingPage.style.display = "flex";
+      homePage.style.display = "none";
+  
+      setTimeout(function () {
+        //your code to be executed after 1 second
+        choosingCategoryPage.style.display = "flex";
+        loadingPage.style.display = "none";
+        cat1ButtonEl.textContent = games.question[questionNumber].cat1.name;
+        cat2ButtonEl.textContent = games.question[questionNumber].cat2.name;
+        cat3ButtonEl.textContent = games.question[questionNumber].cat3.name;
+        cat4ButtonEl.textContent = games.question[questionNumber].cat4.name;
+      }, 2500);
+    }
+  }, 300);
+  
 }
 
 function loadingPageAnimation() {
@@ -601,13 +611,26 @@ function loadingPageAnimation() {
   }
 }
 
-function showInstructionPage() {
-  if (instructionPage.style.display === "none") {
-    instructionPage.style.display = "flex";
-    homePage.style.display = "none";
-  }
+function showInstructionPage(event) {
+  const button = event.target;
+  button.classList.add("choose");
+  setTimeout(function () {
+    button.classList.remove("choose");
+  }, 100);
+  setTimeout(function () {
+    if (instructionPage.style.display === "none") {
+      instructionPage.style.display = "flex";
+      homePage.style.display = "none";
+    }
+  }, 300);
+ 
 }
-function backToHome() {
+function backToHome(event) {
+  const button = event.target;
+  button.classList.add("choose");
+  setTimeout(function () {
+    button.classList.remove("choose");
+  }, 100);
   homePage.style.display = "flex";
   gamePage.style.display = "none";
   instructionPage.style.display = "none";
@@ -657,11 +680,22 @@ for (let i = 0; i < categoryButtonEl.length; i++) {
 }
 
 function chooseCategory(event) {
+  
   let userCategoryChoice = event.target.id;
-  console.log(userCategoryChoice);
-  choosingCategoryPage.style.display = "none";
+  const button = event.target;
+
+  button.classList.add("choose");
+  setTimeout(function () {
+    button.classList.remove("choose");
+  }, 100);
+
+  setTimeout(function () {
+    choosingCategoryPage.style.display = "none";
   loadingPage.style.display = "flex";
   loadingPageAnimation();
+  }, 400);
+  
+
   setTimeout(function () {
     const questionCategoryEl = document.querySelector("#questionCategory");
     const questionDisplayEl = document.querySelector("#questionDisplay");

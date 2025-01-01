@@ -1,12 +1,13 @@
 body {
-    background-color: red;
+    background-color: pink;
     width: 95%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
-   
+    /* background: linear-gradient(red, white); */
 }
+
 #body {
     height:800px;
     width: 100%;
@@ -25,7 +26,7 @@ body {
    display: flex;
     justify-content: space-between;
     border: solid;
-    background-color: #ed6f84;
+    background-color: red;
     height: 75px;
     align-items: center;
     margin: 10px 0 ;
@@ -39,15 +40,23 @@ body {
    align-items: center;
    height: 500px;
    border: solid;
-   background-color: #ed6f84;
+   background: linear-gradient(red, white);
 }
 #homeButtons {
    display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 100px;
-    background-color: #ed6f84;
+    background-color: white;
     border: solid;
+}
+#startGame {
+   height: 50px;
+   border-radius: 20px;
+}
+#instructionsButton {
+   height: 50px;
+   border-radius: 20px;
 }
 
 
@@ -61,7 +70,7 @@ body {
     display: flex;
     justify-content: space-between;
     border: solid;
-    background-color: #ed6f84;
+    background-color: red;
     height: 75px;
     align-items: center;
  }
@@ -87,24 +96,24 @@ body {
     align-items: center;
     height: 400px;
     border: solid;
-    background-color: #ed6f84;
+    background: linear-gradient(red, white);
  }
  #gameQuestionDisplay {
    display: flex;
    flex-direction: column;
     width: 85%;
     height: 85%;
-    display: flex;
     justify-content: space-evenly;
     align-items: center;
     border: solid;
+    background-color: #ed6f84;
  }
  #gameButtons {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 200px;
-    background-color: #ed6f84;
+    background-color: white;
     border: solid;
  }
  #gameButtons > button {
@@ -125,14 +134,14 @@ body {
    align-items: center;
    height: 500px;
    border: solid;
-   background-color: #ed6f84;
+   background: linear-gradient(red, white);
  }
  #backButton {
    display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 100px;
-    background-color: #ed6f84;
+    background-color: white;
     border: solid;
  }
  #loadingPage {
@@ -142,7 +151,8 @@ body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   background-color: #ed6f84;
+   /* background-color: #ed6f84; */
+   background: linear-gradient(red, white);
  }
  #choosingCategoryPage {
    height:800px;
@@ -150,7 +160,8 @@ body {
    border: solid;
    justify-content: space-evenly;
    align-items: center;
-   background-color: #ed6f84;
+   /* background-color: #ed6f84; */
+   background: linear-gradient(red, white);
  }
  #choosingCategoryPage button {
    display: flex;
@@ -161,6 +172,7 @@ body {
    max-height: 100px;
    max-width: 100px;
    border: solid;
+   border-radius: 20px;
  }
  #next{
    display: flex;
@@ -205,14 +217,14 @@ body {
    align-items: center;
    height: 500px;
    border: solid;
-   background-color: #ed6f84;
+   background: linear-gradient(red, white);
  }
  #correctButtons{
    display: flex;
    justify-content: space-evenly;
    align-items: center;
    height: 180px;
-   background-color: #ed6f84;
+   background-color: white;
    border: solid;
  }
 
@@ -228,14 +240,14 @@ body {
    align-items: center;
    height: 500px;
    border: solid;
-   background-color: #ed6f84;
+   background: linear-gradient(red, white);
 }
 #losingPageButtons {
    display: flex;
    justify-content: space-evenly;
    align-items: center;
    height: 180px;
-   background-color: #ed6f84;
+   background-color: white;
    border: solid;
 }
 
@@ -251,14 +263,14 @@ body {
    align-items: center;
    height: 500px;
    border: solid;
-   background-color: #ed6f84;
+   background: linear-gradient(red, white);
 }
 #winningPageButtons {
    display: flex;
    justify-content: space-evenly;
    align-items: center;
    height: 180px;
-   background-color: #ed6f84;
+   background-color: white;
    border: solid;
 }
 
