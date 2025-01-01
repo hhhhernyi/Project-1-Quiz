@@ -373,6 +373,14 @@ const continueButton = document.querySelector("#continue");
 continueButton.addEventListener("click", continueBtn);
 const winButton = document.querySelector("#winButton");
 winButton.addEventListener('click', winBtn)
+const answerButton = document.querySelectorAll(".answerButton");
+console.log(answerButton);
+for (i=0; i<answerButton.length; i++) {
+  answerButton[i].addEventListener('click', clickFunction);
+}
+function clickFunction(event) {
+  console.log(event.target);
+}
 
 function correctAns(event) {
   const button = event.target;
