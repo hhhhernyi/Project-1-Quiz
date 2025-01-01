@@ -14,27 +14,27 @@ const games = {
       },
       cat2: {
         name: "History",
-        question: "question1.2",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        question: "From which Country did Singapore Gain Independence in 1965?",
+        correctAns: "Malaysia",
+        wrongAns1: "Indonesia",
+        wrongAns2: "Thailand",
+        wrongAns3: "Myanmar",
       },
       cat3: {
-        name: "Trends",
-        question: "question1.3",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Geography",
+        question: "What is The Name of Singapore's Highest Point?",
+        correctAns: "Bukit Timah Hill",
+        wrongAns1: "West Coast Hill",
+        wrongAns2: "Redhill",
+        wrongAns3: "Mount Jurong",
       },
       cat4: {
-        name: "Slang",
-        question: "question1.4",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        name: "Dates",
+        question: "When is Singapore's national day?",
+        correctAns: "August 9th",
+        wrongAns1: "October 14th",
+        wrongAns2: "June 1st",
+        wrongAns3: "April 20th",
       },
     }),
     (q2 = {
@@ -142,6 +142,216 @@ const games = {
         wrongAns3: "wrong answer",
       },
     }),
+    (q5 = {
+      bank: "$100000",
+      cat1: {
+        name: "cat5.1",
+        question: "question5.1",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+      cat2: {
+        name: "cat5.2",
+        question: "question5.2",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+      cat3: {
+        name: "cat5.3",
+        question: "question5.3",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+      cat4: {
+        name: "cat5.4",
+        question: "question5.4",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+    }),
+    (q6 = {
+      bank: "$200000",
+      cat1: {
+        name: "cat6.1",
+        question: "question6.1",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+      cat2: {
+        name: "cat6.2",
+        question: "question6.2",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+      cat3: {
+        name: "cat6.3",
+        question: "question6.3",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+      cat4: {
+        name: "cat6.4",
+        question: "question6.4",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+    }),
+    (q7 = {
+      bank: "$500000",
+      cat1: {
+        name: "cat7.1",
+        question: "question7.1",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+      cat2: {
+        name: "cat7.2",
+        question: "question7.2",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+      cat3: {
+        name: "cat7.3",
+        question: "question7.3",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+      cat4: {
+        name: "cat7.4",
+        question: "question7.4",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+    }),
+    (q8 = {
+      bank: "$750000",
+      cat1: {
+        name: "cat8.1",
+        question: "question8.1",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+      cat2: {
+        name: "cat8.2",
+        question: "question8.2",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+      cat3: {
+        name: "cat8.3",
+        question: "question8.3",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+      cat4: {
+        name: "cat8.4",
+        question: "question8.4",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+    }),
+    (q9 = {
+      bank: "$900000",
+      cat1: {
+        name: "cat9.1",
+        question: "question9.1",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+      cat2: {
+        name: "cat9.2",
+        question: "question9.2",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+      cat3: {
+        name: "cat9.3",
+        question: "question9.3",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+      cat4: {
+        name: "cat9.4",
+        question: "question9.4",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+    }),
+    (q10 = {
+      bank: "$1000000",
+      cat1: {
+        name: "cat10.1",
+        question: "question10.1",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+      cat2: {
+        name: "cat4.2",
+        question: "question10.2",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+      cat3: {
+        name: "cat4.3",
+        question: "question10.3",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+      cat4: {
+        name: "cat10.4",
+        question: "question10.4",
+        correctAns: "correct answer",
+        wrongAns1: "wrong answer",
+        wrongAns2: "wrong answer",
+        wrongAns3: "wrong answer",
+      },
+    }),
   ],
 };
 //question number tracker
@@ -215,8 +425,11 @@ function wrongAns(event) {
     button.classList.add("wrong");
   }, 1000);
   setTimeout(function () {
+    button.classList.remove("wrong");
     losingPage.style.display = "flex";
     gamePage.style.display = "none";
+    const losingDisplayEl = document.querySelector("#losingDisplay");
+    losingDisplayEl.textContent =`Oh no, you have reached the end of the game, better luck next time! You have gotten $0!`;
   }, 2000);
 }
 function quit(event) {
@@ -429,6 +642,14 @@ function toggleSound() {
     soundButtonEl.textContent = "Sound: On";
   }
 }
+// playing the background music
+var audio = new Audio('audio_file.mp3');
+if (soundOn===true){
+  audio.play();
+} else {
+  audio.play();
+}
+
 // category button functions
 const categoryButtonEl = document.querySelectorAll(".categoryButtons");
 for (let i = 0; i < categoryButtonEl.length; i++) {
