@@ -477,6 +477,8 @@ function continueBtn(event) {
 
     choosingCategoryPage.style.display = "flex";
     correctAnsPage.style.display = "none";
+    const questionNumberCatEl =document.querySelector("#questionNumberCategory")
+    questionNumberCatEl.textContent = `Question number: ${questionNumber+1}`;
     cat1ButtonEl.textContent = games.question[questionNumber].cat1.name;
     cat2ButtonEl.textContent = games.question[questionNumber].cat2.name;
     cat3ButtonEl.textContent = games.question[questionNumber].cat3.name;
