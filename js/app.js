@@ -556,7 +556,8 @@ function startGame(event) {
       homePage.style.display = "none";
   
       setTimeout(function () {
-        //your code to be executed after 1 second
+        const questionNumberCatEl =document.querySelector("#questionNumberCategory")
+        questionNumberCatEl.textContent = `Question number: ${questionNumber+1}`;
         choosingCategoryPage.style.display = "flex";
         loadingPage.style.display = "none";
         cat1ButtonEl.textContent = games.question[questionNumber].cat1.name;
@@ -726,7 +727,7 @@ function chooseCategory(event) {
     const questionCategoryEl = document.querySelector("#questionCategory");
     const questionDisplayEl = document.querySelector("#questionDisplay");
     const bankDisplayEL = document.querySelector("#bank");
-    const questionNumberEl =document.querySelector(".questionNumber")
+    const questionNumberEl =document.querySelector("#questionNumber")
     gamePage.style.display = "flex";
     loadingPage.style.display = "none";
 
@@ -735,7 +736,7 @@ function chooseCategory(event) {
         bankDisplayEL.textContent = `Bank: ${games.question[questionNumber].bank}`;
         questionCategoryEl.textContent =`Category: ${games.question[questionNumber].cat1.name}`;
         questionDisplayEl.textContent =games.question[questionNumber].cat1.question;
-        questionNumberEl.textContent=`Question number: ${questionNumber+1}`
+        questionNumberEl.textContent=`Question number: ${questionNumber+1}`;
 
         
         button1.textContent = games.question[questionNumber].cat1.wrongAns3;
