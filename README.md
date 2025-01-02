@@ -17,12 +17,13 @@ this is a very simple game to play. there will be a total of 10 questions to ans
 
 <h2>Game Design Development</h2>
 
+
 <h3>User Stories</h3>
 <p>
   <ul>
     <li>As a quiz player, I want to see a fresh game page so that I can start playing.</li>
     <li>As a player, i want to be able to choose if i want to start straightaway, or see the instructions first</li>
-    <li>As a player, i want to be abld to toggle the music on and off </li>
+    <li>As a player, i want to be able to toggle the music on and off </li>
     <li>As a player, i want to see which button i pressed</li> 
     <li> As a player, i want to know if the button i pressed is the correct answer or not</li>
     <li>As a player, i want to hear if the answer i pressed is correct or wrong</li>
@@ -35,3 +36,10 @@ this is a very simple game to play. there will be a total of 10 questions to ans
 </p>
 
 <h3>Pseudocode</h3>
+<li>Create all the pages i need in div</li>
+<li>Hide the unneccessary Divs and work on a main div first</li>
+<li>Follow the wireframe i made and create the template and buttons</li>
+<li>Wire up the buttons and link them to the correct pages by hiding and showing the correct divs</li>
+<li>Add in the question bank</li>
+<li>Add in some accessibility features like correct answer color and music</li>
+<li>Add in some BGM and allow user to toggle it on/off</li>
