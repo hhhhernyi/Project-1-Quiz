@@ -726,7 +726,7 @@ function chooseCategory(event) {
     const questionCategoryEl = document.querySelector("#questionCategory");
     const questionDisplayEl = document.querySelector("#questionDisplay");
     const bankDisplayEL = document.querySelector("#bank");
-    const questionNumberEl =document.querySelector("#questionNumber")
+    const questionNumberEl =document.querySelector(".questionNumber")
     gamePage.style.display = "flex";
     loadingPage.style.display = "none";
 
