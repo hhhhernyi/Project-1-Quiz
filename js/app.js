@@ -696,11 +696,15 @@ function toggleSound() {
   if (soundOn) {
     soundOn = false;
     soundButtonEl.textContent = "Sound: Off";
+    backgroundMusic.play();
+backgroundMusic.loop =true;
     backgroundMusic.volume=0;
   } else {
     soundOn = true;
     soundButtonEl.textContent = "Sound: On";
-    backgroundMusic.volume=0.4;
+    backgroundMusic.play();
+backgroundMusic.loop =true;
+backgroundMusic.volume=0.4;
   }
 }
 // category button functions
