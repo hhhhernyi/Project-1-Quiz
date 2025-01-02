@@ -154,19 +154,26 @@ body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   /* background-color: #ed6f84; */
    background: linear-gradient(red, white);
  }
  #choosingCategoryPage {
    height:800px;
    display: flex;
    border: solid;
+   flex-direction: column;
    justify-content: space-evenly;
    align-items: center;
-   /* background-color: #ed6f84; */
    background: linear-gradient(red, white);
  }
- #choosingCategoryPage button {
+ 
+ #choosingCategoryPageButtons {
+   width: 95%;
+   height: 60%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+ }
+ .categoryButtons {
    display: flex;
    justify-content: space-evenly;
    align-items: center;
