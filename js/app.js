@@ -667,26 +667,22 @@ for (let i = 0; i < backButtonEl.length; i++) {
 
 // toggle the sound button on and off
 const soundButtonEl = document.querySelector("#soundButton");
+const backgroundMusic = new Audio('../assets/sound/BGM.mp3')
 let soundOn = true;
+backgroundMusic.play();
+backgroundMusic.volume=0.4;
 soundButtonEl.addEventListener("click", toggleSound);
 function toggleSound() {
   if (soundOn) {
     soundOn = false;
     soundButtonEl.textContent = "Sound: Off";
+    backgroundMusic.volume=0;
   } else {
     soundOn = true;
     soundButtonEl.textContent = "Sound: On";
+    backgroundMusic.volume=0.4;
   }
 }
-
-// playing the background music
-var audio = new Audio('audio_file.mp3');
-if (soundOn===true){
-  audio.play();
-} else {
-  audio.play();
-}
-
 // category button functions
 const categoryButtonEl = document.querySelectorAll(".categoryButtons");
 for (let i = 0; i < categoryButtonEl.length; i++) {
