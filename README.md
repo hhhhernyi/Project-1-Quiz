@@ -1,5 +1,6 @@
 
 <h1>You want to be a millionaire or not?</h1>
+![logo of the game](/assets/images/Logo.png)
 the idea for this game comes from the very popular TV game show "Who wants to be a millionaire?"
 However, there is a slight twist to it as instead of just usual trivia questions, this is more singaporean trivia style
 the inspiration for this comes from my little brother who is in secondary school, and he likes to read up on all these "did you know?" kind of facts from all over the world
@@ -45,6 +46,9 @@ this is a very simple game to play. there will be a total of 10 questions to ans
 <li>Add in some accessibility features like correct answer color and music</li>
 <li>Add in some BGM and allow user to toggle it on/off</li>
 </ul>
+
+<h3>Wireframe</h3>
+![wireframe of the game pages](/assets/images/wireframe.png)
 
 <h2>Future developments</h2>
 <ul>
