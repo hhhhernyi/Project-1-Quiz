@@ -688,6 +688,7 @@ const soundButtonEl = document.querySelector("#soundButton");
 const backgroundMusic = new Audio('../assets/sound/BGM.mp3')
 let soundOn = true;
 backgroundMusic.play();
+backgroundMusic.autoplay=true;
 backgroundMusic.loop =true;
 backgroundMusic.volume=0.4;
 soundButtonEl.addEventListener("click", toggleSound);
