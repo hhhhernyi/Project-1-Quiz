@@ -345,18 +345,18 @@ const games = {
       },
       cat4: {
         name: "cat10.4",
-        question: "question10.4",
-        correctAns: "correct answer",
-        wrongAns1: "wrong answer",
-        wrongAns2: "wrong answer",
-        wrongAns3: "wrong answer",
+        question: "Which organisation did Singapore founded?",
+        correctAns: "World Toilet Organization",
+        wrongAns1: "World Customs Organization",
+        wrongAns2: "Organization for Economic Co-operation and Development",
+        wrongAns3: "International Coffee Organization",
       },
     }),
   ],
 };
-//question number tracker
+// question number tracker
 let questionNumber = 0;
-//button functions for the game
+// button functions for the game
 const buttonQuit = document.querySelector("#quit");
 buttonQuit.addEventListener("click", quit);
 const nextButton = document.querySelector("#nextButton");
@@ -370,14 +370,14 @@ const button2 = document.querySelector("#answer2");
 const button3 = document.querySelector("#answer3");
 const button4 = document.querySelector("#answer4");
 const answerButton = document.querySelectorAll(".answerButton");
-console.log(answerButton);
+
 for (i=0; i<answerButton.length; i++) {
   answerButton[i].addEventListener('click', clickFunction);
 }
-function clickFunction(event) {
-  console.log(event.target.classList[1]);
 
+function clickFunction(event) {
   const button = event.target;
+  console.log(button)
   button.classList.add("choose");
   setTimeout(function () {
     button.classList.remove("choose");
@@ -397,6 +397,7 @@ function correctAns(event) {
     button.classList.add("correct");
     correctSound.play();
   }, 1000);
+
   questionNumber += 1;
   if (questionNumber<games.question.length) {
     // if this is not the last question
@@ -418,9 +419,10 @@ function next(event) {
   setTimeout(function () {
     button.classList.remove("choose");
   }, 100);
+
   setTimeout(function () {
     nextEl.style.display = "none";
-    button1.classList.remove("correct");
+   
     loadingPageAnimation();
     gamePage.style.display = "none";
     correctAnsPage.style.display = "flex";
@@ -436,7 +438,9 @@ function wrongAns(event) {
     wrongSound.play();
   }, 1000);
   setTimeout(function () {
-    button.classList.remove("wrong");
+    for (i=0; i<answerButton.length; i++) {
+      answerButton[i].classList.remove("wrong");
+    }
     losingPage.style.display = "flex";
     gamePage.style.display = "none";
     questionNumber = 0;
@@ -464,6 +468,13 @@ function continueBtn(event) {
     button.classList.remove("choose");
   }, 100);
   setTimeout(function () {
+    for (i=0; i<answerButton.length; i++) {
+      answerButton[i].classList.remove("correctAnswer");
+      answerButton[i].classList.remove("wrongAnswer");
+      answerButton[i].classList.remove("correct");
+      answerButton[i].classList.remove("wrong");
+    }
+
     choosingCategoryPage.style.display = "flex";
     correctAnsPage.style.display = "none";
     cat1ButtonEl.textContent = games.question[questionNumber].cat1.name;
@@ -484,6 +495,10 @@ function winBtn(event) {
     loadingPageAnimation();
     gamePage.style.display = "none";
     winningPage.style.display = "flex";
+    const winningSound = new Audio('../assets/sound/winner.mp3');
+    winningSound.play();
+    winningSound.loop = true;
+    winningSound.volume=0.7;
   }, 2000);
 
 }
@@ -721,21 +736,24 @@ function chooseCategory(event) {
         questionCategoryEl.textContent =`Category: ${games.question[questionNumber].cat1.name}`;
         questionDisplayEl.textContent =games.question[questionNumber].cat1.question;
         questionNumberEl.textContent=`Question number: ${questionNumber+1}`
-        button4.textContent = games.question[questionNumber].cat1.correctAns;
-        button4.classList.add("correctAnswer");
+
+        
+        button1.textContent = games.question[questionNumber].cat1.wrongAns3;
+        button1.classList.add("wrongAnswer");
         button2.textContent = games.question[questionNumber].cat1.wrongAns1;
         button2.classList.add("wrongAnswer");
         button3.textContent = games.question[questionNumber].cat1.wrongAns2;
         button3.classList.add("wrongAnswer");
-        button1.textContent = games.question[questionNumber].cat1.wrongAns3;
-        button1.classList.add("wrongAnswer");
-
+        button4.textContent = games.question[questionNumber].cat1.correctAns;
+        button4.classList.add("correctAnswer");
         break;
+
       case "cat2":
         bankDisplayEL.textContent = `Bank: ${games.question[questionNumber].bank}`;
         questionCategoryEl.textContent = `Category: ${games.question[questionNumber].cat2.name}`;
-        questionDisplayEl.textContent =
-          games.question[questionNumber].cat2.question;
+        questionDisplayEl.textContent = games.question[questionNumber].cat2.question;
+        questionNumberEl.textContent=`Question number: ${questionNumber+1}`
+
           button1.textContent = games.question[questionNumber].cat2.correctAns;
           button1.classList.add("correctAnswer")
           button2.textContent = games.question[questionNumber].cat2.wrongAns1;
@@ -745,31 +763,35 @@ function chooseCategory(event) {
           button4.textContent = games.question[questionNumber].cat2.wrongAns3;
           button4.classList.add("wrongAnswer");
         break;
+
       case "cat3":
         bankDisplayEL.textContent = `Bank: ${games.question[questionNumber].bank}`;
         questionCategoryEl.textContent = `Category: ${games.question[questionNumber].cat3.name}`;
-        questionDisplayEl.textContent =
-          games.question[questionNumber].cat3.question;
-          button2.textContent = games.question[questionNumber].cat3.correctAns;
-          button2.classList.add("correctAnswer")
+        questionDisplayEl.textContent = games.question[questionNumber].cat3.question;
+        questionNumberEl.textContent=`Question number: ${questionNumber+1}`
+
           button1.textContent = games.question[questionNumber].cat3.wrongAns1;
           button1.classList.add("wrongAnswer")
+          button2.textContent = games.question[questionNumber].cat3.correctAns;
+          button2.classList.add("correctAnswer")
           button3.textContent = games.question[questionNumber].cat3.wrongAns2;
           button3.classList.add("wrongAnswer")
           button4.textContent = games.question[questionNumber].cat3.wrongAns3;
           button4.classList.add("wrongAnswer");
         break;
+
       case "cat4":
         bankDisplayEL.textContent = `Bank: ${games.question[questionNumber].bank}`;
         questionCategoryEl.textContent = `Category: ${games.question[questionNumber].cat4.name}`;
-        questionDisplayEl.textContent =
-          games.question[questionNumber].cat4.question;
-          button3.textContent = games.question[questionNumber].cat4.correctAns;
-          button3.classList.add("correctAnswer")
-          button2.textContent = games.question[questionNumber].cat4.wrongAns1;
-          button2.classList.add("wrongAnswer")
+        questionDisplayEl.textContent = games.question[questionNumber].cat4.question;
+        questionNumberEl.textContent=`Question number: ${questionNumber+1}`
+
           button1.textContent = games.question[questionNumber].cat4.wrongAns2;
           button1.classList.add("wrongAnswer")
+          button2.textContent = games.question[questionNumber].cat4.wrongAns1;
+          button2.classList.add("wrongAnswer")
+          button3.textContent = games.question[questionNumber].cat4.correctAns;
+          button3.classList.add("correctAnswer")
           button4.textContent = games.question[questionNumber].cat4.wrongAns3;
           button4.classList.add("wrongAnswer");
         break;
