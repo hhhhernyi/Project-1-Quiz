@@ -670,6 +670,7 @@ const soundButtonEl = document.querySelector("#soundButton");
 const backgroundMusic = new Audio('../assets/sound/BGM.mp3')
 let soundOn = true;
 backgroundMusic.play();
+backgroundMusic.loop =true;
 backgroundMusic.volume=0.4;
 soundButtonEl.addEventListener("click", toggleSound);
 function toggleSound() {
@@ -710,30 +711,29 @@ function chooseCategory(event) {
     const questionCategoryEl = document.querySelector("#questionCategory");
     const questionDisplayEl = document.querySelector("#questionDisplay");
     const bankDisplayEL = document.querySelector("#bank");
+    const questionNumberEl =document.querySelector("#questionNumber")
     gamePage.style.display = "flex";
     loadingPage.style.display = "none";
 
     switch (userCategoryChoice) {
       case "cat1":
         bankDisplayEL.textContent = `Bank: ${games.question[questionNumber].bank}`;
-        questionCategoryEl.textContent =
-          games.question[questionNumber].cat1.name;
-        questionDisplayEl.textContent =
-          games.question[questionNumber].cat1.question;
-        button1.textContent = games.question[questionNumber].cat1.correctAns;
-        button1.classList.add("correctAnswer");
+        questionCategoryEl.textContent =`Category: ${games.question[questionNumber].cat1.name}`;
+        questionDisplayEl.textContent =games.question[questionNumber].cat1.question;
+        questionNumberEl.textContent=`Question number: ${questionNumber+1}`
+        button4.textContent = games.question[questionNumber].cat1.correctAns;
+        button4.classList.add("correctAnswer");
         button2.textContent = games.question[questionNumber].cat1.wrongAns1;
         button2.classList.add("wrongAnswer");
         button3.textContent = games.question[questionNumber].cat1.wrongAns2;
         button3.classList.add("wrongAnswer");
-        button4.textContent = games.question[questionNumber].cat1.wrongAns3;
-        button4.classList.add("wrongAnswer");
+        button1.textContent = games.question[questionNumber].cat1.wrongAns3;
+        button1.classList.add("wrongAnswer");
 
         break;
       case "cat2":
         bankDisplayEL.textContent = `Bank: ${games.question[questionNumber].bank}`;
-        questionCategoryEl.textContent =
-          games.question[questionNumber].cat2.name;
+        questionCategoryEl.textContent = `Category: ${games.question[questionNumber].cat2.name}`;
         questionDisplayEl.textContent =
           games.question[questionNumber].cat2.question;
           button1.textContent = games.question[questionNumber].cat2.correctAns;
@@ -747,14 +747,13 @@ function chooseCategory(event) {
         break;
       case "cat3":
         bankDisplayEL.textContent = `Bank: ${games.question[questionNumber].bank}`;
-        questionCategoryEl.textContent =
-          games.question[questionNumber].cat3.name;
+        questionCategoryEl.textContent = `Category: ${games.question[questionNumber].cat3.name}`;
         questionDisplayEl.textContent =
           games.question[questionNumber].cat3.question;
-          button1.textContent = games.question[questionNumber].cat3.correctAns;
-          button1.classList.add("correctAnswer")
-          button2.textContent = games.question[questionNumber].cat3.wrongAns1;
-          button2.classList.add("wrongAnswer")
+          button2.textContent = games.question[questionNumber].cat3.correctAns;
+          button2.classList.add("correctAnswer")
+          button1.textContent = games.question[questionNumber].cat3.wrongAns1;
+          button1.classList.add("wrongAnswer")
           button3.textContent = games.question[questionNumber].cat3.wrongAns2;
           button3.classList.add("wrongAnswer")
           button4.textContent = games.question[questionNumber].cat3.wrongAns3;
@@ -762,16 +761,15 @@ function chooseCategory(event) {
         break;
       case "cat4":
         bankDisplayEL.textContent = `Bank: ${games.question[questionNumber].bank}`;
-        questionCategoryEl.textContent =
-          games.question[questionNumber].cat4.name;
+        questionCategoryEl.textContent = `Category: ${games.question[questionNumber].cat4.name}`;
         questionDisplayEl.textContent =
           games.question[questionNumber].cat4.question;
-          button1.textContent = games.question[questionNumber].cat4.correctAns;
-          button1.classList.add("correctAnswer")
+          button3.textContent = games.question[questionNumber].cat4.correctAns;
+          button3.classList.add("correctAnswer")
           button2.textContent = games.question[questionNumber].cat4.wrongAns1;
           button2.classList.add("wrongAnswer")
-          button3.textContent = games.question[questionNumber].cat4.wrongAns2;
-          button3.classList.add("wrongAnswer")
+          button1.textContent = games.question[questionNumber].cat4.wrongAns2;
+          button1.classList.add("wrongAnswer")
           button4.textContent = games.question[questionNumber].cat4.wrongAns3;
           button4.classList.add("wrongAnswer");
         break;

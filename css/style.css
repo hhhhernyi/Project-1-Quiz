@@ -136,6 +136,9 @@ body {
    border: solid;
    background: linear-gradient(red, white);
  }
+ #instructionsFull {
+   margin: 10px;
+ }
  #backButton {
    display: flex;
     justify-content: space-evenly;
