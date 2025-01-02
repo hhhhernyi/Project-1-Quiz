@@ -686,7 +686,6 @@ for (let i = 0; i < backButtonEl.length; i++) {
 // toggle the sound button on and off
 const soundButtonEl = document.querySelector("#soundButton");
 const backgroundMusic = new Audio('../assets/sound/BGM.mp3')
-// BGM audio does not play when page is refreshed, not sure why
 let soundOn = true;
 backgroundMusic.play();
 backgroundMusic.loop =true;
