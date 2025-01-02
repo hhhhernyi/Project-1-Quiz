@@ -43,3 +43,10 @@ this is a very simple game to play. there will be a total of 10 questions to ans
 <li>Add in the question bank</li>
 <li>Add in some accessibility features like correct answer color and music</li>
 <li>Add in some BGM and allow user to toggle it on/off</li>
+
+<h2>Future developments</h2>
+<li>Adding in lifelines</li>
+<li>Adding in 6 categories per question and only showing 4 random ones at each question</li>
+<li>Adding in a registration page in which user can enter their username to track the high scores</li>
+<li>Adding in a highscore board to show past history of who answered the most questions correctly</li>
+<li>Adding in a safe haven spot, where players are guaranteed a certain amount of money even if they answer a question wrongly</li>
