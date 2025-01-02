@@ -356,15 +356,7 @@ const games = {
 };
 //question number tracker
 let questionNumber = 0;
-// button functions for the game
-const button1 = document.querySelector("#answer1");
-button1.addEventListener("click", correctAns);
-const button2 = document.querySelector("#answer2");
-button2.addEventListener("click", wrongAns);
-const button3 = document.querySelector("#answer3");
-button3.addEventListener("click", wrongAns);
-const button4 = document.querySelector("#answer4");
-button4.addEventListener("click", wrongAns);
+//button functions for the game
 const buttonQuit = document.querySelector("#quit");
 buttonQuit.addEventListener("click", quit);
 const nextButton = document.querySelector("#nextButton");
@@ -373,28 +365,41 @@ const continueButton = document.querySelector("#continue");
 continueButton.addEventListener("click", continueBtn);
 const winButton = document.querySelector("#winButton");
 winButton.addEventListener('click', winBtn)
+const button1 = document.querySelector("#answer1");
+const button2 = document.querySelector("#answer2");
+const button3 = document.querySelector("#answer3");
+const button4 = document.querySelector("#answer4");
 const answerButton = document.querySelectorAll(".answerButton");
 console.log(answerButton);
 for (i=0; i<answerButton.length; i++) {
   answerButton[i].addEventListener('click', clickFunction);
 }
 function clickFunction(event) {
-  console.log(event.target);
-}
+  console.log(event.target.classList[1]);
 
-function correctAns(event) {
   const button = event.target;
   button.classList.add("choose");
   setTimeout(function () {
     button.classList.remove("choose");
   }, 100);
+
+  if (event.target.classList[1] === 'correctAnswer') {
+    correctAns(event);
+  } else if (event.target.classList[1] ==='wrongAnswer') {
+    wrongAns(event);
+  }
+}
+
+function correctAns(event) {
+   const button = event.target;
+   const correctSound = new Audio('../assets/sound/Correct.mp3')
   setTimeout(function () {
     button.classList.add("correct");
+    correctSound.play();
   }, 1000);
   questionNumber += 1;
   if (questionNumber<games.question.length) {
     // if this is not the last question
-    
     setTimeout(function () {
       nextEl.style.display = "flex";
     }, 2000);
@@ -425,12 +430,10 @@ function next(event) {
 }
 function wrongAns(event) {
   const button = event.target;
-  button.classList.add("choose");
-  setTimeout(function () {
-    button.classList.remove("choose");
-  }, 100);
+  const wrongSound = new Audio('../assets/sound/wrong.mp3')
   setTimeout(function () {
     button.classList.add("wrong");
+    wrongSound.play();
   }, 1000);
   setTimeout(function () {
     button.classList.remove("wrong");
@@ -504,11 +507,13 @@ winningPage.style.display = "none";
 losingPage.style.display = "none";
 choosingCategoryPage.style.display = "none";
 loadingPage.style.display = "none";
+
 //button display
 const nextEl = document.querySelector("#next");
 nextEl.style.display = "none";
 const winEl = document.querySelector("#win");
 winEl.style.display='none';
+
 // category buttons
 const cat1ButtonEl = document.querySelector("#cat1");
 const cat2ButtonEl = document.querySelector("#cat2");
@@ -673,6 +678,7 @@ function toggleSound() {
     soundButtonEl.textContent = "Sound: On";
   }
 }
+
 // playing the background music
 var audio = new Audio('audio_file.mp3');
 if (soundOn===true){
@@ -719,9 +725,13 @@ function chooseCategory(event) {
         questionDisplayEl.textContent =
           games.question[questionNumber].cat1.question;
         button1.textContent = games.question[questionNumber].cat1.correctAns;
+        button1.classList.add("correctAnswer");
         button2.textContent = games.question[questionNumber].cat1.wrongAns1;
+        button2.classList.add("wrongAnswer");
         button3.textContent = games.question[questionNumber].cat1.wrongAns2;
+        button3.classList.add("wrongAnswer");
         button4.textContent = games.question[questionNumber].cat1.wrongAns3;
+        button4.classList.add("wrongAnswer");
 
         break;
       case "cat2":
@@ -730,10 +740,14 @@ function chooseCategory(event) {
           games.question[questionNumber].cat2.name;
         questionDisplayEl.textContent =
           games.question[questionNumber].cat2.question;
-        button1.textContent = games.question[questionNumber].cat2.correctAns;
-        button2.textContent = games.question[questionNumber].cat2.wrongAns1;
-        button3.textContent = games.question[questionNumber].cat2.wrongAns2;
-        button4.textContent = games.question[questionNumber].cat2.wrongAns3;
+          button1.textContent = games.question[questionNumber].cat2.correctAns;
+          button1.classList.add("correctAnswer")
+          button2.textContent = games.question[questionNumber].cat2.wrongAns1;
+          button2.classList.add("wrongAnswer")
+          button3.textContent = games.question[questionNumber].cat2.wrongAns2;
+          button3.classList.add("wrongAnswer")
+          button4.textContent = games.question[questionNumber].cat2.wrongAns3;
+          button4.classList.add("wrongAnswer");
         break;
       case "cat3":
         bankDisplayEL.textContent = `Bank: ${games.question[questionNumber].bank}`;
@@ -741,10 +755,14 @@ function chooseCategory(event) {
           games.question[questionNumber].cat3.name;
         questionDisplayEl.textContent =
           games.question[questionNumber].cat3.question;
-        button1.textContent = games.question[questionNumber].cat3.correctAns;
-        button2.textContent = games.question[questionNumber].cat3.wrongAns1;
-        button3.textContent = games.question[questionNumber].cat3.wrongAns2;
-        button4.textContent = games.question[questionNumber].cat3.wrongAns3;
+          button1.textContent = games.question[questionNumber].cat3.correctAns;
+          button1.classList.add("correctAnswer")
+          button2.textContent = games.question[questionNumber].cat3.wrongAns1;
+          button2.classList.add("wrongAnswer")
+          button3.textContent = games.question[questionNumber].cat3.wrongAns2;
+          button3.classList.add("wrongAnswer")
+          button4.textContent = games.question[questionNumber].cat3.wrongAns3;
+          button4.classList.add("wrongAnswer");
         break;
       case "cat4":
         bankDisplayEL.textContent = `Bank: ${games.question[questionNumber].bank}`;
@@ -752,10 +770,14 @@ function chooseCategory(event) {
           games.question[questionNumber].cat4.name;
         questionDisplayEl.textContent =
           games.question[questionNumber].cat4.question;
-        button1.textContent = games.question[questionNumber].cat4.correctAns;
-        button2.textContent = games.question[questionNumber].cat4.wrongAns1;
-        button3.textContent = games.question[questionNumber].cat4.wrongAns2;
-        button4.textContent = games.question[questionNumber].cat4.wrongAns3;
+          button1.textContent = games.question[questionNumber].cat4.correctAns;
+          button1.classList.add("correctAnswer")
+          button2.textContent = games.question[questionNumber].cat4.wrongAns1;
+          button2.classList.add("wrongAnswer")
+          button3.textContent = games.question[questionNumber].cat4.wrongAns2;
+          button3.classList.add("wrongAnswer")
+          button4.textContent = games.question[questionNumber].cat4.wrongAns3;
+          button4.classList.add("wrongAnswer");
         break;
     }
   }, 2500);
