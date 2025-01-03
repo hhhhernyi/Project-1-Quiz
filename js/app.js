@@ -344,7 +344,7 @@ const games = {
         wrongAns3: "39",
       },
       cat4: {
-        name: "cat10.4",
+        name: "International",
         question: "Which organisation did Singapore founded?",
         correctAns: "World Toilet Organization",
         wrongAns1: "World Customs Organization",
@@ -499,7 +499,6 @@ function winBtn(event) {
     winningPage.style.display = "flex";
     const winningSound = new Audio('../assets/sound/winner.mp3');
     winningSound.play();
-    winningSound.loop = true;
     winningSound.volume=0.7;
   }, 2000);
 
