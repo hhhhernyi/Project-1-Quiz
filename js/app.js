@@ -383,9 +383,9 @@ function clickFunction(event) {
     button.classList.remove("choose");
   }, 100);
 
-  if (event.target.classList[1] === 'correctAnswer') {
+  if (event.target.classList[2] === 'correctAnswer') {
     correctAns(event);
-  } else if (event.target.classList[1] ==='wrongAnswer') {
+  } else if (event.target.classList[2] ==='wrongAnswer') {
     wrongAns(event);
   }
 }
