@@ -51,6 +51,7 @@ this is a very simple game to play. there will be a total of 10 questions to ans
 
 
 ## Future developments
+* use a volume slider instead of on/off
 * Adding in lifelines
 * Adding in 6 categories per question and only showing 4 random ones at each question
 * Adding in a registration page in which user can enter their username to track the high scores
