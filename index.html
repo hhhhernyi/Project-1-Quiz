@@ -6,11 +6,15 @@
     <title>You want to be millionaire or not?</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script defer src="./js/app.js"></script>
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&display=swap" rel="stylesheet">
+</head>
   <body >
     <div id="body" >
       <div id="topNav">
-        <button id="soundButton">Sound: On</button>
+        <button id="soundButton" class="anton-regular">Sound: On</button>
         <audio src="/assets/sound/BGM.mp3" id="backgroundMusic"></audio>
       </div>
       <div id="homePage">
@@ -18,91 +22,91 @@
           <div id="logo"><img alt="Circular logo of the game" src="/assets/images/Logo.png"/></div>
         </div>
         <div id="homeButtons">
-          <button id="instructionsButton">Instructions</button>
-          <button id="startGame">Start game</button>
+          <button id="instructionsButton" class="anton-regular">Instructions</button>
+          <button id="startGame" class="anton-regular">Start game</button>
         </div>
       </div>
 
       <div id="gamePage">
         <div id="gameTopNav">
-          <h2 id="bank">Bank:</h2>
+          <h2 id="bank" class="anton-regular">Bank:</h2>
         </div>
         <div id="gameDisplay">
           <div id="gameQuestionDisplay">
-            <p  id="questionNumber">Question number:</p>
-            <p id="questionCategory">category:</p>
-            <p id="questionDisplay">Question is displayed here</p>
+            <p  id="questionNumber" class="zilla-slab-bold">Question number:</p>
+            <p id="questionCategory" class="zilla-slab-bold">category:</p>
+            <p id="questionDisplay" class="zilla-slab-bold">Question is displayed here</p>
           </div>
         </div>
         <div id="gameButtons">
           <audio src="/assets/sound/Correct.mp3"></audio>
           <audio src="/assets/sound/wrong.mp3"></audio>
-          <button id="answer1" class="answerButton">Answer 1</button>
-          <button id="answer2" class="answerButton">Answer 2</button>
-          <button id="answer3" class="answerButton">Answer 3</button>
-          <button id="answer4" class="answerButton">Answer 4</button>
+          <button id="answer1" class="answerButton zilla-slab-bold">Answer 1</button>
+          <button id="answer2" class="answerButton zilla-slab-bold">Answer 2</button>
+          <button id="answer3" class="answerButton zilla-slab-bold">Answer 3</button>
+          <button id="answer4" class="answerButton zilla-slab-bold">Answer 4</button>
         </div>
       </div>
 
       <div id="instructionsPage">
         <div id="instructionsDisplay">
-          <div id="instructionsFull">
-            <p>You want to be a millionaire or not? is a quiz game based on the popular game show, Who wants to be a Millionaire? but with a singaporean twist!</p>
-            <li>Contestants have to correctly answer a series of multiple-choice questions in order to advance to the next level / question.</li>
-            <li>There are 10 questions in total and each question is worth a specific amount of money and no time limit is placed on contestants to come up with an answer</li>
-            <li>At every level, players can choose from 4 different categories and answer the question</li>
-            <li>If they answer correctly, they will earn a certain amount of money in their bank and move on to the next question, or withdraw all the money and quit</li>
-            <li>However, if they answer the question wrongly, they will lose all of the money they earned and go home with nothing!</li>
+          <div id="instructionsFull" >
+            <p class="zilla-slab-bold">You want to be a millionaire or not? is a quiz game based on the popular game show, Who wants to be a Millionaire? but with a singaporean twist!</p>
+            <li class="zilla-slab-medium">Contestants have to correctly answer a series of multiple-choice questions in order to advance to the next level / question.</li>
+            <li class="zilla-slab-medium">There are 10 questions in total and each question is worth a specific amount of money and no time limit is placed on contestants to come up with an answer</li>
+            <li class="zilla-slab-medium">At every level, players can choose from 4 different categories and answer the question</li>
+            <li class="zilla-slab-medium">If they answer correctly, they will earn a certain amount of money in their bank and can choose tomove on to the next question, or withdraw all the money and quit</li>
+            <li class="zilla-slab-medium">However, if they answer the question wrongly, they will lose all of the money they earned and go home with nothing!</li>
           </div>
         </div>
         <div id="backButton">
-          <button class="backToHome">Back To Home</button>
+          <button class="backToHome anton-regular">Back To Home</button>
         </div>
       </div>
 
       <div id="winningPage">
-        <div id="winningDisplay">Congratulations! you have won a million dollars!</div>
+        <div id="winningDisplay" class="anton-regular">Congratulations! you have won a million dollars!</div>
         <div id="winningPageButtons">
-            <button class="backToHome">Back to Home</button>
+            <button class="backToHome anton-regular">Back to Home</button>
         </div>
       </div>
 
       <div id="losingPage">
         <div id="losingDisplay">Oh no, you have reached the end of the game, better luck next time! You have gotten ${bank}! </div>
         <div id="losingPageButtons">
-            <button class="backToHome">Back to Home</button>
+            <button class="backToHome anton-regular">Back to Home</button>
         </div>
 
       </div>
       <div id="loadingPage">
-        <div id="loadingText">loading.</div>
+        <div id="loadingText" class="zilla-slab-bold">loading.</div>
       </div>
       
       <div id="choosingCategoryPage">
-        <div id="questionNumberCategory">Question Number</div>
+        <div id="questionNumberCategory" class="zilla-slab-bold">Question Number</div>
         <div id="choosingCategoryPageButtons">
-          <button id="cat1" class="categoryButtons">Cat 1</button>
-        <button id="cat2" class="categoryButtons">Cat 2</button>
-        <button id="cat3" class="categoryButtons">Cat 3</button>
-        <button id="cat4" class="categoryButtons">Cat 4</button>
+          <button id="cat1" class="categoryButtons zilla-slab-bold">Cat 1</button>
+          <button id="cat2" class="categoryButtons zilla-slab-bold">Cat 2</button>
+          <button id="cat3" class="categoryButtons zilla-slab-bold">Cat 3</button>
+          <button id="cat4" class="categoryButtons zilla-slab-bold">Cat 4</button>
         </div>
         
       </div>
 
       <div id="correctAnsPage">
-        <div id="correctDisplay">you have ${bank} in your bank now! do you wish to continue?</div>
+        <div id="correctDisplay" class="zilla-slab-bold">you have ${bank} in your bank now! do you wish to continue?</div>
         <div id="correctButtons">
-            <button id="continue">Continue</button>
-            <button id="quit">Quit</button>
+            <button id="continue" class="anton-regular">Continue</button>
+            <button id="quit" class="anton-regular">Quit</button>
         </div>
       </div>
     </div>
 
     <div id="next">
-        <button id="nextButton">Next</button>
+        <button id="nextButton" class="anton-regular">Next</button>
     </div>
     <div id="win">
-        <button id="winButton">Next</button>
+        <button id="winButton" class="anton-regular">Next</button>
     </div>
     
 
